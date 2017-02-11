@@ -1,14 +1,11 @@
-
 #include <iostream>
-//#include <cstring>
 #include <string>
-//#include <stdio.h>
 
 using namespace std;
 
 int matriz[50][50];
 
-void transition(string P, string Alfabeto){
+void transition(string P, string Alfabeto){ //genera la función de transición
     int m = P.length();
     int k;
 
@@ -27,7 +24,7 @@ void transition(string P, string Alfabeto){
     }
 }
 
-int matcher(string Text, int m){
+int matcher(string Text, int m){ //envía la cadena de entrada en la función de transción
     int n = Text.length();
     int q = 0;
     int i;
